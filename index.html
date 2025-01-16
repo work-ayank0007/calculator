@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class=" w-screen h-screen flex items-center">
+        <div class=" border-black w-[20em] h-[30em] mx-auto border-2 rounded-lg p-1 flex flex-col gap-y-1 bg-gray-600">
+            <div class="border-black border-2 rounded-md h-1/4 bg-slate-400 flex flex-col justify-end">
+                <input id="result" type="text" readonly class="bg-inherit text-right rounded-md mx-1">
+            </div>
+            <div class="border-black border-2 rounded-md h-full grid grid-cols-3 grid-rows-6 gap-1 p-1 bg-white/40 select-none">
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("7")'>7</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("8")'>8</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("9")'>9</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("4")'>4</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("5")'>5</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("6")'>6</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("1")'>1</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("2")'>2</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("3")'>3</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("0")'>0</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("+")'>+</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("*")'>X</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("/")'>/</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("-")'>-</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-white hover:bg-slate-500 hover:text-gray-900 transition-all duration-150 cursor-pointer" onclick='append("%")'>%</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-slate-800 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-150 cursor-pointer" id="clear">CE</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-white/50 text-black hover:text-gray-900 transition-all duration-150 hover:text-2xl hover:bg-green-400 cursor-pointer" onclick="res()">=</div>
+                <div class="border-black border-2 rounded-md content-center text-center text-xl font-bold bg-white/50 hover:bg-red-500 text-black hover:text-gray-900 transition-all duration-150 hover:text-2xl cursor-pointer group" onclick="bksp()">
+                    <i class="fa-solid fa-delete-left group-hover:text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/31ad5bbd94.js" crossorigin="anonymous"></script>
+</body>
+</html>
